@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register | Online Quiz System</title>
+	</head>
+	<body>
+		<form method="POST" enctype="multipart/form-data">
+			<div>
+				<label>Enter Titlename:</label>
+				<input type="text" name="title" required />
+			</div>								
+	                                <div>
+				<label>Enter Total Question:</label>
+				<input type="number" name="totalque" required />
+			</div>
+			<div>
+				<label>Enter Total Marks:</label>
+				<input type="number" name="totalmark" required />
+			</div>
+			<div>
+				<label>Upload  File Here</label>
+				<input type="file" name="file"  required />
+	                                </div>                             
+			<div>
+				<button name="submit">Upload</button>
+			</div>
+		</form>
+		<form method="post" action="home.html" >
+			<input type=submit name="" value=Back>
+		</form>
+	</body>
+</html>
