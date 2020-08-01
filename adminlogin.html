@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login | Online Quiz System</title>	
+		<title>Login | Online Quiz System</title>
+		<link rel="stylesheet" href="form.css">
+        <style type="text/css">
+            body{
+                  width: 100%;
+                  background: url("book.png " ) ;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: cover;
+                }
+          </style>	
 	</head>
 	<body>
-		<center> 
-			<h5 ><font color=green>Login to </h5><h4>Online Quiz System</font></h4></center><br>
-			<form method="get" action="./Admin/home.html" >
-			<div>
-				<label>Enter Your User Name :</label>
-				<input type="username" name="username">
+		<body>
+		<section class="login first grey">
+			<div class="container">
+				<div class="box-wrapper">				
+					<div class="box box border">
+						<div class="box-body">
+						<center> <h5 style="font-family: Noto Sans;"><font color ="green">Login to </h5><h4 style="font-family: Noto Sans;">Online Quiz System</font></h4></center><br>
+							<form method="get" action="./Admin/home.html" >								<div class="form-group">
+									<label>Enter Your User Name :</label>
+									<input type="username" name="username">
+								</div>
+								<div class="form-group">
+									<label class="fw">Enter Your Password:				
+									<input type="password" name="password">
+									<a href= " ">Forgot Password?</a>
+								</div> 
+								<div class="form-group text-right">
+									<button class="btn btn-primary btn-block" name="submit"><font color="white">Login</font></button>
+								</div>								
+							</form>
+							<center>
+							<form method="get" action="index.html" >
+								<input type=submit name="" value=Back>
+							</form></center>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div>
-				Enter Your Password:
-				<a href=" ">Forgot Password?</a>
-				</label>
-				<input type="password" name="password">
-			</div> 
-			<div>
-				<button name="submit">Login</button>
-			</div>								
-			</form>
-			<form method="get" action="index.html" >
-				<input type=submit name="" value=Back>
-			</form>
+		</section>			
 	</body>
-</htm
+</html>

@@ -1,0 +1,30 @@
+body { 
+  background-image: url("home.png");
+  background-color: #000;
+  margin: 0;
+  font-family: Noto Sans;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transperent;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #008B8B;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #fff;
+  color: white;
+}
+

@@ -1,0 +1,24 @@
+body { 
+  background-image: url("sub.jpg");
+  background-color: #000;
+  margin: 0;
+  font-family: Noto Sans;
+}
+.topnav a {
+  margin-left:550px;
+  color:black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color:black;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #fff;
+  color: white;
+}
+
