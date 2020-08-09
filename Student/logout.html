@@ -1,7 +1,14 @@
 <html>
+<head>
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
+</head>
 <body>
-<form action="../index.html" method="get">
-<center><input type=submit name="" value=Logout></center>
+<center><font color=blue><h3>Do you really want to logout?</h3></font><a href=../index.html>Logout</a></center>
+<br><center><a href=home.html>Back</a></center></br>
 </form>
 </body>
 </html>

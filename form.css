@@ -107,7 +107,7 @@ body {
     border-color: #2E8B57;
   }
   .btn-primary:disabled, .btn-primary.disabled, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:focus {
-    background-color: black;
+    background-color: blue;
     border-color: #2E8B57;
     box-shadow: none;
     outline: 0;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<center>Use User name="User1" and Password="User10702" where required.</center>
 		<title>Login | Online Quiz System</title>
 		<link rel="stylesheet" href="form.css">
         <style type="text/css">
@@ -22,7 +23,7 @@
 					<div class="box box border">
 						<div class="box-body">
 						<center> <h5 style="font-family: Noto Sans;"><font color ="green">Login to </h5><h4 style="font-family: Noto Sans;">Online Quiz System</font></h4></center><br>
-							<form method="get" action="./Admin/home.html" >								<div class="form-group">
+							<form method="get">								<div class="form-group">
 									<label>Enter Your User Name :</label>
 									<input type="username" name="username">
 								</div>
@@ -32,7 +33,7 @@
 									<a href= " ">Forgot Password?</a>
 								</div> 
 								<div class="form-group text-right">
-									<button class="btn btn-primary btn-block" name="submit"><font color="white">Login</font></button>
+									<button class="btn btn-primary btn-block" name="submit" onclick="pasuser(this.form)"><font color="white">Login</font></button>
 								</div>								
 							</form>
 							<center>
@@ -43,6 +44,19 @@
 					</div>
 				</div>
 			</div>
-		</section>			
+		</section>
+		<script language="javascript">
+			function pasuser(form)
+			{
+				if(form.username.value=="User1" && form.password.value=="User10702")
+				{
+					window.open('Admin/home.html')
+				}
+				else
+				{
+					alert("Invalid username or password!!!")
+				}
+			}
+		</script>			
 	</body>
 </html>

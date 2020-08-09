@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script language="JavaScript"> 
+    			function showInput(form) 
+			{	
+				var string1=document.getElementById('name').value.fontcolor("yellow");
+				var string2=document.getElementById('uname').value.fontcolor("yellow");
+				var string3=document.getElementById('mail').value.fontcolor("yellow");
+				var string4=document.getElementById('pass1').value.fontcolor("yellow");
+				var string5=document.getElementById('pass2').value.fontcolor("yellow");
+				if(string4==string5)
+				{
+	    		 		document.getElementById('display1').innerHTML=document.getElementById('name').value.fontcolor("yellow"); 
+					document.getElementById('display2').innerHTML=document.getElementById('uname').value.fontcolor("yellow"); 
+					document.getElementById('display3').innerHTML=document.getElementById('mail').value.fontcolor("yellow"); 
+					document.getElementById('display4').innerHTML=document.getElementById('pass1').value.fontcolor("yellow"); 										document.getElementById('display5').innerHTML=document.getElementById('pass2').value.fontcolor("yellow"); 
+				}
+				else
+				{
+					alert("Password mismatch!!!");
+				}
+    			} 
+  </script>
 		<title>Register | Online Quiz System</title>
 		<link rel="stylesheet" href="form.css">
         <style type="text/css">
@@ -22,31 +43,30 @@
 					<div class="box box-border">
 						<div class="box-body">
 							<center> <h5 style="font-family: Noto Sans;">Register to </h5><h4 style="font-family: Noto Sans;">Online Quiz System</h4></center><br>
-							<form  action=""  method="get">								<div class="form-group">
+							<form>								<div class="form-group">
 									<label>Enter Your Name:</label>
-									<input type="text" name="first_name" required />
+									<input type="text" name="first_name" id="name" required />
 								</div>								
                                 <div class="form-group">
 									<label>Enter Your Username:</label>
-									<input type="text" name="username" required />
+									<input type="text" name="username" id="uname" required />
 								</div>
 								<div class="form-group">
 									<label>Enter Your Email Id:</label>
-									<input type="email" name="email" required />
+									<input type="email" name="email" id="mail" required />
 								</div>
 								<div class="form-group">
 									<label>Enter Your Password:</label>
-									<input type="password" name="password1" required />
-                                </div>
+									<input type="password" name="password1" id="pass1" required />
+                                						</div>
 								<div class="form-group">
-									<label>RE-Enter Your Password:</label>
-									<input type="password" name="password2" required />
-                                </div>
+									<label>Confirm Password:</label>
+									<input type="password" name="password2" id="pass2" required />
+                                						</div>
 
-                                
-								<div class="form-group text-right">
-									<button class="btn btn-primary btn-block" name="submit"><font color="white">Register</font></button>
-								</div>
+								<input type="button" class="btn btn-primary btn-block" value="Register" onclick="showInput(this.form)">  
+								                                
+								
 								<div class="form-group text-center">
 									<label class="fw">Already have an account!<a href="login.html">Login </a> Here..
 								</div>
@@ -55,10 +75,16 @@
 							<form method="get" action="index.html" >
 								<input type=submit name="" value=Back>
 							</form></center>
+							<center>Scroll to see output</center>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<center><font color=white>Name:-</font><p id='display1'></p></center>
+		<center><font color=white>Username:-</font><p id='display2'></p></center>
+		<center><font color=white>E-Mail:-</font><p id='display3'></p></center>
+		<center><font color=white>Password:-</font><p id='display4'></p></center>
+		<center><font color=white>Confirm Password:-</font><p id='display5'></p></center>
 	</body>
 </html>
