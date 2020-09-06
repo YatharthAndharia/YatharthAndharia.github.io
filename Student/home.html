@@ -1,19 +1,53 @@
 <html>
 <head>
 <link rel="stylesheet" href="welcome.css">
+<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-	<div class="topnav">
- 	<b>
-		<a href = home.html>Home</a>
-		<a href = quizsub.html>Quiz Subjects</a>
-		<a href = quizid.html>Rank List</a>
-		<a href = quizid.html>Previous Result</a>
-		<a href = testpreview.html>Test Preview</a>
-		<a href = feedback.html>Feedback</a>
-		<a href = logout.html>Logout</a></b>
-	</div>
-</center>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="">Home</a></li>
+	<li><a href = quizsub.html><font color="white">Quiz Subjects</font></a></li>
+	<li><a href = quizid.html><font color="white">Rank List</font></a></li>
+	<li><a href = quizid.html><font color="white">Previous Result</font></a></li>
+	<li><a href = testpreview.html><font color="white">Test Preview</font></a></li>
+	<li><a href = feedback.html><font color="white">Feedback</font></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span><font color="white">Logout</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <br><br><br><br>
+      <p><a href=""><font color="yellow"><h4><b>UpcomingEvents</b></h4></font></a></p><br><br>
+      <p><a href=""><font color="yellow"><h4><b>PlayQuiz&Win</b></h4></font></a></p><br><br>
+      <p><a href=""><font color="yellow"><h4><b>MockTest</b></h4></font></a></p><br><br>
+      <p><a href=""><font color="yellow"><h4><b>OtherRelated Websites</b></h4></font></a></p><br><br>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1><font color="white"><b>Welcome</b></font></h1>
+      <hr>
+    </div>
+        <div class="col-sm-2 sidenav">
+        <p><a href="https://iimcat.ac.in/per/g01/pub/756/ASM/WebPortal/1/index.html?756@@1@@1"><img src="cat.jpg" width="175px" height="150px"></a></p>
+        <p><a href="http://gate.iitd.ac.in/"><img src="gate.jpg" width="175px" height="150px"></a></p>
+        <p><a href="https://www.youth4work.com/onlinetalenttest/Aptitude-test"><img src="apt.jpg" width="175px" height="150px"></a></p>
+    </div>
+  </div>
+</div>
 </body>
 </html>

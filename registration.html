@@ -22,7 +22,8 @@
 				}
     			} 
   </script>
-		<title>Register | Online Quiz System</title>
+		<title>Register | Online Quiz System |</title>
+		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="form.css">
         <style type="text/css">
             body{
@@ -43,25 +44,26 @@
 					<div class="box box-border">
 						<div class="box-body">
 							<center> <h5 style="font-family: Noto Sans;">Register to </h5><h4 style="font-family: Noto Sans;">Online Quiz System</h4></center><br>
-							<form>								<div class="form-group">
+							<form>								
+								<div class="form-group">
 									<label>Enter Your Name:</label>
-									<input type="text" name="first_name" id="name" required />
+									<input type="text" name="first_name" id="name" class="form-control" placeholder="Firstname_Middlename_Lastname" required />
 								</div>								
                                 <div class="form-group">
 									<label>Enter Your Username:</label>
-									<input type="text" name="username" id="uname" required />
+									<input type="text" name="username" id="uname" class="form-control" placeholder="Username" required />
 								</div>
 								<div class="form-group">
 									<label>Enter Your Email Id:</label>
-									<input type="email" name="email" id="mail" required />
+									<input type="email" name="email" id="mail" class="form-control" placeholder="abc@xyz.com" required />
 								</div>
 								<div class="form-group">
 									<label>Enter Your Password:</label>
-									<input type="password" name="password1" id="pass1" required />
+									<input type="password" name="password1" id="pass1" class="form-control" placeholder="Password" required />
                                 						</div>
 								<div class="form-group">
 									<label>Confirm Password:</label>
-									<input type="password" name="password2" id="pass2" required />
+									<input type="password" name="password2" id="pass2" class="form-control" placeholder="Password and Confirm Password must be matched" required />
                                 						</div>
 
 								<input type="button" class="btn btn-primary btn-block" value="Register" onclick="showInput(this.form)">  

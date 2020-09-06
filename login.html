@@ -3,7 +3,7 @@
 	<head>
 		<center>Use User name="User1" and Password="User10702" where required.</center>
 		<title>Login | Online Quiz System</title>
-		
+		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="form.css">
         <style type="text/css">
             body{
@@ -19,19 +19,20 @@
 	<body>
 		<body>
 		<section class="login first grey">
+			<div class="col-auto">
 			<div class="container">
-				<div class="box-wrapper">				
-					<div class="box box container">
+				<div class="box-wrapper">	
+					<div class="box box-border">			
 						<div class="box-body">
 						<center> <h5 style="font-family: Noto Sans;"><font color ="green">Login to </h5><h4 style="font-family: Noto Sans;">Online Quiz System</font></h4></center><br>
-							<form name=login method="get">								
+							<form name=login method="get" >								
 								<div class="form-group">
-									<label>Enter Your User Name :</label>
-									<input type="username" name="username">
+									<label>User Name :</label>
+									<input type="username" name="username" class="form-control" placeholder="Username">
 								</div>
 								<div class="form-group">
-									<label class="fw">Enter Your Password:    				
-									<input type="password" name="password">
+									<label class="fw">Password:    				
+									<input type="password" name="password" class="form-control" placeholder="Password">
 									<a href= " ">Forgot Password?</a>		
 								</div> 
 								<div class="form-group text-right">
@@ -40,8 +41,7 @@
 								<div class="form-group text-center">
 									<label class="fw">Don't have an account?<a href="registration.html">Register</a> Here..
 									<br><center><a href="adminlogin.html">Admin Login</a></center></br>
-								</div>								
-								
+								</div>											
 							</form>
 							<center>
 							<form method="get" action="index.html" >
@@ -50,6 +50,7 @@
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 		</section>
 		<script language="javascript">

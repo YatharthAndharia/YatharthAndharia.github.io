@@ -13,8 +13,12 @@ body {
 }
 
 .topnav a:hover {
-  background-color:black;
+  background-color:#fffff;
   color: white;
+}
+img:hover {
+    webkit-filter: blur(4px);
+    filter: blur(2px);
 }
 
 .topnav a.active {
