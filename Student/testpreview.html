@@ -1,6 +1,28 @@
 <html>
 <link rel="stylesheet" href="testpreview.css">
 <link rel="stylesheet" href="bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("input[type='submit'][id='but1']").click(function(){
+		var response=$("input[name='n1']:checked").val();
+		if(response=="*****")
+		{
+			alert("Correct answer!!!");
+		}
+		else
+		{
+			alert("Sorry! Incorrect Answer...");
+		}
+	});
+	$(function() {
+  $('#enlarge').animate({ height: '60px' }, 1000, 'linear');
+});
+$("div[id='enlarge']").animate({
+      left: '600px',
+    });
+});
+</script>	
 <style type="text/css">
             body{
                   width: 100%;
@@ -10,6 +32,15 @@
                   background-attachment: fixed;
                   background-size: cover;
                 }
+                #enlarge {
+  background:red ;
+  height: ;
+  width: 80px;
+  z-index: 3;
+  position:absolute;
+  
+}
+
 </style>
 <body>
 <br><br><h1>
@@ -19,27 +50,28 @@
 <h2>Question</h2><h4>What will you rate us?</h4>
     <div>                 
                 <div>
-            		<input type="radio" name="n1"  value=""/>
+            		<input type="radio" name="n1"  value="**" id="b1"/>
             		<label>A)**</label>
                 </div>
 	<div>
-            		<input type="radio" name="n1"  value="" />
+            		<input type="radio" name="n1"  value="***" id="b2" />
             		<label>B)***</label>
         	</div>
 	<div>
-            		<input type="radio" name="n1"  value="" />
+            		<input type="radio" name="n1"  value="****" id="b3" />
             		<label>C)****</label>
         	</div>
 	<div>
-            		<input type="radio" name="n1"  value="" />
+            		<input type="radio" name="n1"  value="*****" id="b4" />
             		<label>D)*****</label>
         	</div>
-                <input type=submit name=" " value ="submit"><====><input type=submit name=" "value ="next">
+                <input type=submit name=" " value ="submit" id="but1"><====><input type=submit name=" "value ="next">
     </div>
  
 </form>
 <form method="get" action="home.html" >
 	<input type=submit name="" value=Back>
 </form>
+<b><div id="enlarge"><font color="yellow"><center>No negative markings!!!</center></font></div></b>
 </body>
 </html>
